@@ -1,0 +1,47 @@
+### Test api index
+GET http://localhost:4000
+Accept: application/json
+
+
+### Get all Users
+GET http://localhost:4000/api/users
+Accept: application/json
+
+
+### Get only active Users
+GET http://localhost:4000/api/users/active
+Accept: application/json
+
+
+### Create a new User
+POST http://localhost:4000/api/users
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "userTest",
+  "name": "Jhon",
+  "lastname" : "Doe",
+  "email": "jhondoe@mail.xyz"
+}
+
+
+### Get one User
+GET http://localhost:4000/api/users/61f6dc385067a0191fd4e624
+Accept: application/json
+
+
+### Update a User
+PUT http://localhost:4000/api/users/61f6dc385067a0191fd4e624
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Jhonny",
+  "email": "jhonnydoe@mail.xyz"
+}
+
+
+### Delete a User
+DELETE http://localhost:4000/api/users/61f6dc385067a0191fd4e624
+Accept: application/json

@@ -1,0 +1,54 @@
+### Test backend app index
+GET http://localhost:4000
+Accept: application/json
+
+
+### Get all Users
+GET http://localhost:4000/api/users
+Accept: application/json
+
+
+### Get only active Users
+GET http://localhost:4000/api/users/active
+Accept: application/json
+
+
+### Get all Recipes
+GET http://localhost:4000/api/recipes
+Accept: application/json
+
+
+### Create a new Recipe
+POST http://localhost:4000/api/recipes
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Receta 1",
+  "description": "La descripcion de la receta",
+  "ingredients": "Una lista de ingredientes",
+  "imageUrl": "https://loremflickr.com/320/240",
+  "preparation": "Instrucciones de preparacion"
+}
+
+
+### Get one Recipe
+GET http://localhost:4000/api/recipes/61f6d46ff1293b61c08858e8
+Accept: application/json
+
+
+### Update a Recipe
+PUT http://localhost:4000/api/recipes/61f6d46ff1293b61c08858e8
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Edited recipe",
+  "description": "Fue editada",
+  "ingredients": "Otros ingredientes"
+}
+
+
+### Delete a Recipe
+DELETE http://localhost:4000/api/recipes/61f6d46ff1293b61c08858e8
+Accept: application/json

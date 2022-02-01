@@ -1,0 +1,32 @@
+{
+  "name": "recipes-app-backend",
+  "version": "1.0.0",
+  "description": "API Gateway for serve actions to the recipes-app fronted",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "babel ./src -d ./dist",
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "keywords": [],
+  "author": "Víctor",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "2.8.5",
+    "dotenv": "14.3.2",
+    "express": "4.17.2",
+    "morgan": "1.10.0",
+    "node-fetch": "3.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.16.8",
+    "@babel/core": "7.16.12",
+    "@babel/node": "7.16.8",
+    "@babel/preset-env": "7.16.11",
+    "babel-loader": "8.2.3",
+    "core-js": "3.20.3",
+    "nodemon": "2.0.15",
+    "prettier": "2.5.1"
+  }
+}

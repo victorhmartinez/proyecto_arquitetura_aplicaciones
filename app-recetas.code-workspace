@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "api-recipes"
+		},
+		{
+			"path": "api-users"
+		},
+		{
+			"path": "backend-recetas"
+		}
+	]
+}
